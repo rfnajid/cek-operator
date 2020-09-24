@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Cek Operator</title>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+
+        <script src="https://cdn.jsdelivr.net/npm/no-telp@1.0.1/dist/noTelp.min.js"></script>
+    </head>
+
+    <body>
+        <div id="panel">
+            <div>
+                <h1 class="title">Cek Operator</h1>
+                <div class="form-group">
+                    <input class="form-control form-control-lg" type="tel" id="tel" placeholder="Masukan no. telpon disini"/>
+                    <i id="submit-button" class="fa fa-search"></i>
+                </div>
+            </div>
+            <div class="alert alert-danger" role="alert" id="error" style="display: none;">
+                Nomor tidak valid
+            </div>
+            <div class="card" id="result-card" style="display: none;">
+                <div class="card-body">
+                    <img src="assets/images/operator/telkomsel.jpg" id="logo-operator"/>
+                    <div class="form-group row">
+                        <label for="operator" class="col-sm-2 col-form-label">Operator</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="operator" value="Telkomsel">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="card" class="col-sm-2 col-form-label">Kartu</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="card" value="kartu AS">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="assets/js/script.js"></script>
+
+</html>
